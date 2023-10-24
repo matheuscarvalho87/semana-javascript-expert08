@@ -1,6 +1,6 @@
 import http from 'node:http'
 import fs from 'node:fs/promises'
-import { join } from  'node:path'
+import { join } from 'node:path'
 import url from 'node:url'
 import Routes from './routes.js'
 import { logger } from './util.js'
@@ -32,3 +32,4 @@ const startServer = () => {
 server.listen(PORT, startServer)
 
 // curl -X POST -F "video.mp4=@big2m.mp4" http://localhost:3000
+// curl -X POST -F "video.gif=@demo.gif" http://localhost:3000 
